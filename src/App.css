@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+.employee-onboard {
+  font-size: 18px;
+  background-color: #ccc;
+  color: #111;
+  text-align: left;
+  padding: 0.75rem 0.75rem;
+  margin-top: 0;
+  text-transform: uppercase;
+  border-left: 3px solid #1976d2;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.MuiDataGrid-root .MuiDataGrid-columnsContainer {
+  background-color: #1976d2;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.MuiIconButton-label {
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.MuiDataGrid-root .MuiDataGrid-columnHeader:not(.MuiDataGrid-columnHeader--sorted):hover .MuiDataGrid-sortIcon {
+  opacity: 5.5 !important;
+}
+
+.deletebtn {
+  margin: 0rem 0.5rem !important;
+}
+
+.main-container {
+  padding: 1rem;
+  border-radius: 0.25rem;
+  border: 1px solid #ccc;
+  margin: 1.5rem;
+}
+
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+  background: #ccc !important;
+  border-top-right-radius: 0.25rem;
+  text-transform: capitalize !important;
+}
+
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  color: #fff !important;
+  background: #1976d2 !important;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0;
+  text-transform: capitalize;
+}
+
+.tab-container {
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+}
+
+.data-tab-table {
+  padding: 0 !important;
+}
+
+.add-employee {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  background-color: #fff;
+  flex-direction: column;
+}
+
+.add-employee .info-form {
+  padding: 1rem;
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  background-color: #fff;
+  flex-direction: column;
+}
+
+.add-employee .employee-filed {
+  padding-bottom: 1rem;
+}
+
+.add-employee .employee-filed:last-child {
+  background-color: #f0f0f0;
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
+
+.add-employee .info-form .employee-filed:last-child {
+  background-color: inherit;
+  padding: 0;
+  border: none;
+}
+
+.add-employee .employee-filed:last-child button {
+  margin-right: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.errormsg {
+  display: block;
+  color: red;
+  padding: 0.5rem 0rem;
 }
